@@ -1,3 +1,3 @@
 # ApiAspNetCore
 
-Implementação de Api com Auth em swagger ASP.NET CORE 8.0.3
+Implementação de Api com EntityFrameworkCore | SQL Server | Auth | Swagger | ASP.NET CORE 8.0.3
