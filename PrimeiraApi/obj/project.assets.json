@@ -4422,11 +4422,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CSharp\\Finance\\Api\\PrimeiraApi\\PrimeiraApi.csproj",
+      "projectUniqueName": "C:\\Users\\Ulisses Gimenes\\Documents\\GitHub\\ApiAspNetCore\\PrimeiraApi\\PrimeiraApi.csproj",
       "projectName": "PrimeiraApi",
-      "projectPath": "D:\\CSharp\\Finance\\Api\\PrimeiraApi\\PrimeiraApi.csproj",
+      "projectPath": "C:\\Users\\Ulisses Gimenes\\Documents\\GitHub\\ApiAspNetCore\\PrimeiraApi\\PrimeiraApi.csproj",
       "packagesPath": "C:\\Users\\Ulisses Gimenes\\.nuget\\packages\\",
-      "outputPath": "D:\\CSharp\\Finance\\Api\\PrimeiraApi\\obj\\",
+      "outputPath": "C:\\Users\\Ulisses Gimenes\\Documents\\GitHub\\ApiAspNetCore\\PrimeiraApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ulisses Gimenes\\AppData\\Roaming\\NuGet\\NuGet.Config",

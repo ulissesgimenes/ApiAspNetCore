@@ -9,23 +9,41 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Não recomendado apenas para testes
+//Não recomendado, apenas para testes
 ///normal deixar apenas builder.Services.AddControllers();
 
 //builder.Services.AddControllers();
 
+//Personalização de retornos de erro
 builder.Services.AddControllers()
     .ConfigureApiBehaviorOptions(options =>
     {
         options.SuppressModelStateInvalidFilter = true;
     });
 
+//Mais segurança ma aplicação para casos de subir em produção
+//Politica recomendada pela microsoft
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("Development", builder =>
+    builder        
+        .WithOrigins()
+        .AllowAnyMethod()
+            .AllowAnyHeader());
+
+    options.AddPolicy("Production", builder =>
+    builder        
+        .WithOrigins("http://localhost:9000")
+        .WithMethods("POST")
+            .AllowAnyHeader());
+});
+
 builder.Services.AddEndpointsApiExplorer();
 
 //Caso não vá usar auth na Api use apenas o comando abaixo
 //builder.Services.AddSwaggerGen();
 
-//Para liberar token para a API
+//Para utilizar token para a API
 builder.Services.AddSwaggerGen( c => {
     
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -119,6 +137,12 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
+    app.UseCors("Development");
+}
+else
+{
+    //Politica recomendada pela microsoft
+    app.UseCors("Production");
 }
 
 app.UseHttpsRedirection();

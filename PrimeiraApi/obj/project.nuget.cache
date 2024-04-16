@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3eAS1la7Fa6haJzasS4xcvSkx0zRPojHERqOMep1KP3ljmLldAWDrP58wiWBl8gKHCfDpiNGwSJK8JvZyM1xvw==",
+  "dgSpecHash": "RA8K7efu5cfXXOvck0EXN44mCOmnlcRqw5uDfh+mAxH9SmrQQs1+OLCahOw4RoO0WeOXkaDAh5CHK3PV3UVK6A==",
   "success": true,
-  "projectFilePath": "D:\\CSharp\\Finance\\Api\\PrimeiraApi\\PrimeiraApi.csproj",
+  "projectFilePath": "C:\\Users\\Ulisses Gimenes\\Documents\\GitHub\\ApiAspNetCore\\PrimeiraApi\\PrimeiraApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ulisses Gimenes\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Ulisses Gimenes\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
